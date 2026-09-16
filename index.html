@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Warblers That Can Be Seen in Iowa</title>
+  <meta name="description" content="Explore warblers that can be seen in Iowa.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app">
+    <header class="intro">
+      <h1>Warblers That Can Be Seen in Iowa</h1>
+      <p>Click or tap a warbler to learn when it can be seen in Iowa and view information about its range, habitat, nesting, and preferred foods.</p>
+    </header>
+
+    <p id="status-message" class="status-message" role="status" aria-live="polite">Loading warblers…</p>
+
+    <section id="grid-view" aria-labelledby="grid-heading" hidden>
+      <h2 id="grid-heading" class="visually-hidden">Choose a warbler</h2>
+      <div id="warbler-grid" class="warbler-grid"></div>
+    </section>
+
+    <section id="detail-view" class="detail-view" aria-labelledby="detail-name" hidden>
+      <button id="back-button" class="back-button" type="button">
+        <span aria-hidden="true">←</span>
+        Back to all warblers
+      </button>
+      <article id="detail-content"></article>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.5.3/papaparse.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
