@@ -76,7 +76,7 @@ function renderGrid() {
     button.setAttribute("aria-label", `View ${bird.name}`);
 
     const image = document.createElement("img");
-    image.src = `images/thumbnails/${slugify(bird.name)}${BIRD_THUMBNAIL_EXTENSION}`;
+    image.src = `https://mvp2323-lv.github.io/master-detail/images/thumbnails/${slugify(bird.name)}${BIRD_THUMBNAIL_EXTENSION}`;
     image.alt = "";
     image.loading = "lazy";
     image.decoding = "async";
@@ -117,7 +117,7 @@ function renderFoodItems(value) {
         <li class="food-item">
           <img
             class="food-image"
-            src="images/food/${slugify(food)}${FOOD_IMAGE_EXTENSION}"
+            src="https://mvp2323-lv.github.io/master-detail/images/food/${slugify(food)}${FOOD_IMAGE_EXTENSION}"
             alt=""
             loading="lazy"
             decoding="async"
